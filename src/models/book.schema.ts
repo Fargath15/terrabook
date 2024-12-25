@@ -150,12 +150,12 @@ export const getBookSchemaValidate = Joi.string<string>().required();
 
 export const updateBookSchemaValidate = Joi.object<IUpdateBookRequest>({
     user_id: Joi.string(),
-    title: Joi.string().required(),
-    year: Joi.number().required(),
-    author: Joi.string().required(),
-    language: Joi.string().required(),
-    page_count: Joi.number().required(),
-    genre: Joi.string().required(),
+    title: Joi.string(),
+    year: Joi.number(),
+    author: Joi.string(),
+    language: Joi.string(),
+    page_count: Joi.number(),
+    genre: Joi.string(),
     cover_image: Joi.string(),
     publisher: Joi.string(),
     publication: Joi.string(),
